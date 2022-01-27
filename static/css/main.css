@@ -1,0 +1,184 @@
+/*
+  Some custom styles
+*/
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #7091a0;
+}
+
+/* CONTAINER */
+.container {
+  margin: 5rem auto 15rem auto;
+}
+
+/* SCREENSHOT IMAGE */
+#screenshot {
+  width:100%;
+  border-radius: .5rem;
+}
+
+.description {
+  color: #222;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: .4rem;
+}
+
+/* LIST OF USES */
+.use-view {
+  list-style-type: disc;
+}
+
+.use-view p {
+  font-size: 1.1rem;
+}
+
+.use-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.use-info {
+  color: #222;
+  font-size: 1.1rem;
+}
+
+/* CODE EXAMPLES */
+.code-example {
+  color: #88f;
+  font-size: 1.2rem;
+  background-color: #333;
+  border-radius: .3rem;
+  padding: 2.5rem;
+}
+
+.code-example br {
+  display: none;
+}
+
+.links {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.links a {
+  width: 100%;  
+}
+
+@media (max-width: 900px) {
+  /* USE VIEW CHANGES */
+  .use-view  li {
+    float: none;
+  }
+
+  .use-section {
+    display: block;
+    float: none;
+  }
+
+  .use-section div {
+    display: block;
+    float: none;
+  }
+
+  .code-example {
+    display: block;
+    float: none;
+    padding: 1rem 2rem;
+    margin: .5rem auto;
+  }
+
+  .more-examples p,
+  .more-examples code {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  /* USE VIEW CHANGES */
+  .use-view  li {
+    float: none;
+  }
+
+  .use-section {
+    display: block;
+    float: none;
+  }
+
+  .use-section div {
+    display: block;
+    float: none;
+  }
+
+  .code-example {
+    display: block;
+    float: none;
+    padding: 1rem 2rem;
+    margin: .5rem auto;
+  }
+
+  .more-examples p,
+  .more-examples code {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .links {
+    width: 50%;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  #download-button /* showing button for block not inline */ {
+    display: block;
+  }
+
+  /* USE VIEW CHANGES */
+  .use-view  li {
+    float: none;
+  }
+
+  .use-section {
+    display: block;
+    float: none;
+  }
+
+  .use-section div {
+    display: block;
+    float: none;
+  }
+
+  .code-example {
+    display: block;
+    float: none;
+    padding: 1rem 2rem;
+    margin: .5rem auto;
+  }
+
+  .code-example br {
+    display: block;
+  }
+
+  .more-examples p,
+  .more-examples code {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  /* LINKS FROM FOOTER */
+  .links  {
+    width: 80%;
+  }
+
+}

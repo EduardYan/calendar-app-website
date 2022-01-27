@@ -1,0 +1,29 @@
+<!-- PAGE FOR DOWNLOAD -->
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- CUSTOM STYLE -->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/download.css') }}">
+
+<h1 class="text-white text-start">Download</h1>
+<hr class="text-white mb-5">
+
+<!-- DOWNLOADS VIEW -->
+<section class="downloads-view">
+
+  <div class="clearfix p-3 download">
+    <div class="float-start">
+      <h2 class="text-white">GNU/Linux or Mac.</h2>
+      <p>
+        Linux and Mac <strong>64 bits.</strong>
+      </p>
+    </div>
+
+    <a class="btn btn-primary float-end mt-3 get-button" href="{{ url_for('static', filename = 'files/calendar') }}" download="calendar">
+      Get
+    </a>
+
+  </div>
+</section>
+
+{% endblock %}

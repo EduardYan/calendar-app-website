@@ -1,0 +1,3 @@
+# some ignores
+__pycache__
+env

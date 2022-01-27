@@ -1,0 +1,42 @@
+/*
+  Styles for  the page
+  of download.
+*/
+
+
+hr  {
+  width: 50%;
+}
+
+/* DOWNLADS */
+.downloads-view {
+  opacity: .9;
+}
+
+.download {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: .2rem;
+}
+
+/* GET BUTTON */
+.get-button {
+  width: 30%;
+}
+
+@media (max-width: 500px) {
+  hr {
+    width: 100%;
+    color: #f00;
+  }
+
+  .download div {
+    float: none;
+    display: block;
+  }
+
+  .get-button {
+    float: none;
+    display: block;
+    width: 100%; /* all space button */
+  }
+}
