@@ -11,9 +11,19 @@ body {
   background: #7091a0;
 }
 
+/* CONTAIN THE NAVBAR AND CONTAINER */
+.website {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 /* CONTAINER */
 .container {
-  margin: 5rem auto 15rem auto;
+  /* margin: 4rem auto 15rem auto; */
+  margin: 3rem auto;
+  width: 90%;
+  background-color: #656566;
+  padding: 1.5rem;
 }
 
 /* SCREENSHOT IMAGE */
@@ -38,11 +48,6 @@ body {
   font-size: 1.1rem;
 }
 
-.use-section {
-  display: flex;
-  justify-content: space-between;
-}
-
 .use-info {
   color: #222;
   font-size: 1.1rem;
@@ -54,7 +59,8 @@ body {
   font-size: 1.2rem;
   background-color: #333;
   border-radius: .3rem;
-  padding: 2.5rem;
+  padding: 1rem;
+  margin: 0 3rem;
 }
 
 .code-example br {
@@ -70,32 +76,28 @@ body {
   width: 100%;  
 }
 
+#my-name {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
-  /* USE VIEW CHANGES */
-  .use-view  li {
-    float: none;
+  .website {
+    grid-template-columns: 30% 70%;
   }
 
-  .use-section {
-    display: block;
-    float: none;
-  }
-
+  /* USE SECTION CHANGES */
   .use-section div {
     display: block;
     float: none;
   }
 
   .code-example {
-    display: block;
-    float: none;
     padding: 1rem 2rem;
     margin: .5rem auto;
   }
 
   .more-examples p,
   .more-examples code {
-    float: none;
     display: block;
     width: 100%;
   }
@@ -103,33 +105,12 @@ body {
 }
 
 @media (max-width: 700px) {
-  /* USE VIEW CHANGES */
-  .use-view  li {
-    float: none;
-  }
-
-  .use-section {
-    display: block;
-    float: none;
-  }
-
-  .use-section div {
-    display: block;
-    float: none;
+  .website {
+    grid-template-columns: 1fr; /* one column 700px and 500px */
   }
 
   .code-example {
-    display: block;
-    float: none;
-    padding: 1rem 2rem;
-    margin: .5rem auto;
-  }
-
-  .more-examples p,
-  .more-examples code {
-    float: none;
-    display: block;
-    width: 100%;
+    margin: 2rem 0;
   }
 
   .links {
@@ -139,43 +120,6 @@ body {
 }
 
 @media (max-width: 500px) {
-  #download-button /* showing button for block not inline */ {
-    display: block;
-  }
-
-  /* USE VIEW CHANGES */
-  .use-view  li {
-    float: none;
-  }
-
-  .use-section {
-    display: block;
-    float: none;
-  }
-
-  .use-section div {
-    display: block;
-    float: none;
-  }
-
-  .code-example {
-    display: block;
-    float: none;
-    padding: 1rem 2rem;
-    margin: .5rem auto;
-  }
-
-  .code-example br {
-    display: block;
-  }
-
-  .more-examples p,
-  .more-examples code {
-    float: none;
-    display: block;
-    width: 100%;
-  }
-
   /* LINKS FROM FOOTER */
   .links  {
     width: 80%;

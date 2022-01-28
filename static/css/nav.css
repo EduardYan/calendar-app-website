@@ -2,50 +2,50 @@
   Styles for the nav
 */
 
-.navbar {
+.mynav {
   background-color: #227;
+  /* margin: 4rem auto 15rem auto; */
 }
 
-.navbar-left li,
-.navbar-right li {
-  list-style: none;
+.mynav .navbar-left ,
+.mynav .navbar-right {
   padding-left: 0;
-
 }
 
-.navbar-right li hr {
-  display: none;
+.mynav  .navbar-left {
+  margin: 2rem 3rem;
 }
 
-.navbar-left li {
-  margin: 0 5rem;
-  font-size: 2.5rem;
+.mynav .navbar-right {
+  margin: 0 3rem;
 }
 
-.navbar-left li a,
-.navbar-right li a {
+
+.mynav .navbar-left li,
+.mynav .navbar-right li {
+  list-style: none;
+}
+
+.mynav .navbar-left li a,
+.mynav .navbar-right li a {
   text-decoration: none;
-  transition: color .3s ease;
-  transition: border .3s ease;
-  color: #ffffff;
-}
-
-.navbar-left li a:hover,
-.navbar-right li a:hover {
   color: #ccc;
 }
 
-.navbar-right li a:hover {
+.mynav .navbar-left li a {
+  font-size: 1.8rem;
+}
+
+.mynav .navbar-right li {
+  margin: 1rem 0;
+}
+
+.mynav .navbar-right li a:hover {
   border-bottom: 1px solid #ccc;
 }
 
 
-.navbar-right li {
-  padding: 0 7rem;
-  display: inline-block;
-}
-
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .navbar-right li {
     margin: 0;
     padding: 0 5rem;
@@ -91,4 +91,4 @@
     margin-left: 30%;
   }
   
-}
+} */

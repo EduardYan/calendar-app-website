@@ -11,11 +11,14 @@ hr  {
 /* DOWNLADS */
 .downloads-view {
   opacity: .9;
+  border-radius: .5rem;
 }
 
 .download {
   background-color: rgba(0, 0, 0, .2);
-  border-radius: .2rem;
+  border-radius: .3rem;
+  margin-bottom: 6rem; /* change this for
+  add more card for download */
 }
 
 /* GET BUTTON */

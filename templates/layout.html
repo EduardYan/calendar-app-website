@@ -12,14 +12,17 @@
 </head>
 <body>
 
-  <header>
-    {% include 'partials/_nav.html' %}
-  </header>
+  <!-- <header>
+  </header> -->
 
-  <!-- CONTAINER -->
-  <div class="container">
-    {% block body %}
-    {% endblock %}
+  <div class="website">
+    {% include 'partials/_nav.html' %}
+    <!-- CONTAINER -->
+    <div class="container">
+      {% block body %}
+      {% endblock %}
+    </div>
+
   </div>
 
   {% include 'partials/_footer.html' %}

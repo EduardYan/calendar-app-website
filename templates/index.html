@@ -1,3 +1,4 @@
+<!-- PRINCIPAL PAGE -->
 {% extends 'layout.html' %}
 
 {% block body %}
@@ -8,7 +9,7 @@
 
 <p class="text-justify description mt-4 mb-5 p-3">
   Calendar Terminal App, is a application for watch calendars of whatever year or month from
-  the terminal or console.<br>Current Version is 1.0, only for <strong>Linux and Mac.</strong> But comming soon for <strong>Windows.</strong>
+  the terminal or console.<br>Current Version is <strong>1.0</strong>, only for <strong>Linux and Mac.</strong> But comming soon for <strong>Windows.</strong>
 </p>
 
 <img src="{{ url_for('static', filename = 'img/screenshot.png') }}" alt="screenshot" id="screenshot">
@@ -20,7 +21,7 @@
 <p class="my-5 use-info">
   Download the program in the section of <a class="btn btn-success mx-2" href="{{ url_for('calendar.get_download') }}" id="download-button">
     download
-  </a> <br>
+  </a>
   After you can use the program of this form.
 </p>
 
@@ -28,40 +29,36 @@
 <ol class="use-view">
   <li>
     <section class="use-section">
-      <div>
-        <h2 class="text-white mb-2">
-          GNU/Linux and Mac OS.
-        </h2>
+      <h2 class="text-white mb-2">
+        GNU/Linux and Mac OS.
+      </h2>
 
-        <p class="text-dark">
-          When you have the program downloaded, you can execute
-          for see alls the help and use. <br>
-          Also you can move the program to <strong>/usr/bin</strong>. For execute without the <strong>./</strong>
-        </p>
-
-      </div>
-
-      <code class="code-example p-5">
+      <p class="text-dark mb-4">
+        When you have the program downloaded, you can execute
+        for see alls the help and use. <br>
+        Also you can move the program to <strong>/usr/bin</strong>. For execute without the <strong>./</strong>
+      </p>
+      <code class="code-example">
         <span class="text-center">./calendar -h</span>
       </code>
 
     </section>
 
     <!-- MORE EXAMPLES -->
-    <section class="clearfix my-5 more-examples">
-      <p class="text-dark float-start">For see a year or month.</p>
-      <code class="float-end mx-3 code-example">
+    <section class="my-5 more-examples">
+      <p class="text-dark mb-4">For see a year or month.</p>
+      <code class="code-example">
         ./calendar -y 2015 -m 12
       </code>
-      <code class="float-end mx-3 code-example">
+      <code class="code-example">
         ./calendar --year 2020 <br> --month 3
       </code>
 
     </section>
 
-    <section class="clearfix mb-4 more-examples">
-      <p class="text-dark float-start">If you can get the year current and alls the months. <br> Execute easily.</p>
-      <code class="float-end code-example">
+    <section class="mb-4 more-examples">
+      <p class="text-dark mb-4">If you can get the year current and alls the months. <br> Execute easily.</p>
+      <code class="code-example">
         ./calendar
       </code>
     </section>
