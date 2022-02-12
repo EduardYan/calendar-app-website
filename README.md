@@ -14,3 +14,6 @@ pip3 install -r requirements.txt
 ```bash
 python3 index.py
 ```
+
+## Screenshot.
+![screenshot](./doc/screenshot.png)
