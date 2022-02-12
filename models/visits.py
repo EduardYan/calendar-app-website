@@ -13,7 +13,7 @@ class NumberValueInvalid(TypeError):
   pass
 
 
-class Visists(db.Model):
+class Visits(db.Model):
   """
   Model for the visits:
 
