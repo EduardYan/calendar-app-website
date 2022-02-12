@@ -5,7 +5,7 @@ the routes to visit for the website.
 
 from flask import Blueprint, render_template
 from utils.db import db
-from models.visits import Visists
+from models.visits import Visits
 from utils.counter import get_counter
 
 # routes
@@ -20,8 +20,8 @@ def add_visit(counter:int):
   Add the visit passed for parameter
   """
 
-  visits = Visists.query.all()
-  visit = Visists(int(counter))
+  visits = Visits.query.all()
+  visit = Visits(int(counter))
   db.session.add(visit)
   db.session.commit()
 
