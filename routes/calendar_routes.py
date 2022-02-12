@@ -44,8 +44,8 @@ def get_download():
   Route for render the page of download.
   """
 
-  global counter
-  add_visit(counter) # adding visit
-  counter += 1
+  # global counter
+  # add_visit(counter) # adding visit
+  # counter += 1
 
   return render_template('get-download.html')
